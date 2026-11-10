@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+.ipynb_checkpoints/
+.DS_Store
+.venv/
+*.egg-info/
+# Regenerable tutorial and optional campaign products.
+outputs/
+models/
+results*/
+FD_samples*/
+slurm_logs/
