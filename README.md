@@ -82,26 +82,3 @@ Only notebook dependencies are installed in Colab; a Jupyter server is unnecessa
 Download any generated results you want to keep before the runtime disconnects.
 Colab's available resources and session duration are variable; see its
 [official FAQ](https://research.google.com/colaboratory/faq.html).
-
-## Minimal repository and generated files
-
-Only the two source notebooks, required physics code/data, tests, and setup
-instructions are kept. Source notebooks contain no outputs or stored execution
-state. Runs regenerate their plots, checkpoints, samples, and fit archives
-under `outputs/`, which Git ignores. Nothing under `outputs/` is needed to clone
-or start a tutorial.
-
-Input provenance is in [data/README.md](data/README.md). To run the scientific
-and portability tests:
-
-```bash
-python -m pip install -e '.[dev]'
-python -m pytest -q
-```
-
-The tests check clean notebook metadata and the CPU/Colab setup paths.
-Both smoke tutorials and the tests were validated from fresh checkouts on
-Python 3.11 and 3.12.
-
-The Python package retains its name, `ml4nu`. This repository starts from the
-cleaned tutorial snapshot accompanying the two papers linked above.
