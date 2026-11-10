@@ -1,4 +1,4 @@
-# ML_nuxsec_school
+# Machine learning in neutrino cross sections: theory
 
 School tutorials for learning neutrino–nucleus cross sections, with their physics library and required input data.
 Both run on **CPU** with Python **3.11 or 3.12**, locally or in Google Colab.
